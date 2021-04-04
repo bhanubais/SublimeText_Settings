@@ -1,0 +1,19 @@
+{
+    // Help files are standardized on 80 characters wide, but they should not
+    // wrap.
+    "wrap_width": 80,
+    "word_wrap": false,
+
+    // Remove visual clutter from the help view; authoring tools can apply
+    // settings as required to edited views, or you can override these options
+    // if desired in your own settings.
+    "fade_fold_buttons": true,
+    "match_selection": false,
+    "draw_indent_guides": false,
+    "rulers": [],
+
+    // All help files should contain no physical tabs since there will never be
+    // any concensus on how wide they should be.
+    "detect_indentation": false,
+    "translate_tabs_to_spaces": true
+}

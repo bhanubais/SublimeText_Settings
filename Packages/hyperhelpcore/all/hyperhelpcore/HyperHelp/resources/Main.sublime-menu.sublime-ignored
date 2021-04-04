@@ -1,0 +1,157 @@
+[
+    {
+        "caption": "Preferences",
+        "mnemonic": "n",
+        "id": "preferences",
+        "children":
+        [
+            {
+                "caption": "Package Settings",
+                "mnemonic": "P",
+                "id": "package-settings",
+                "children":
+                [
+                    {
+                        "caption": "HyperHelp",
+                        "children":
+                        [
+                            {
+                                "caption": "Documentation",
+                                "command": "hyperhelp_topic",
+                                "args": {
+                                    "package": "HyperHelp",
+                                    "topic": "help_on_help.txt"
+                                }
+                            },
+                            {
+                                "caption": "View ChangeLog",
+                                "command": "hyperhelp_topic",
+                                "args": {
+                                    "package": "HyperHelp",
+                                    "topic": "changelog.txt"
+                                }
+                            },
+                            {
+                                "caption": "-"
+                            },
+                            {
+                                "caption": "Settings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/HyperHelp/resources/HyperHelp.sublime-settings",
+                                    "default": "{\n\t$0\n}\n"
+                                }
+                            },
+                            {
+                                "caption": "Key Bindings",
+                                "command": "edit_settings",
+                                "args": {
+                                    "base_file": "${packages}/HyperHelp/resources/Default ($platform).sublime-keymap",
+                                    "default": "[\n\t$0\n]\n"
+                                }
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+
+   {
+        "id": "help",
+        "children":
+        [
+            {
+                "id": "hyperhelp",
+                "caption": "HyperHelp",
+                "mnemonic": "y",
+                "children": [
+                    {
+                        "caption": "Help on help",
+                        "command": "hyperhelp_topic",
+                        "args": {
+                            "package": "HyperHelp",
+                            "topic": "help_on_help.txt"
+                        }
+                    },
+                    {
+                        "caption": "Browse Available Help…",
+                        "command": "hyperhelp_contents",
+                        "args": { "prompt": true }
+                    },
+
+                    {
+                        "caption": "Create Bookmark…",
+                        "command": "hyperhelp_prompt_create_bookmark"
+                    },
+                    {
+                        "caption": "Open bookmarked help topic…",
+                        "command": "hyperhelp_open_bookmark"
+                    },
+
+                    { "caption": "-" },
+
+                    { "command": "hyperhelp_current_help" },
+
+                    { "caption": "-" },
+
+                    {
+                        "caption": "Table of Contents",
+                        "command": "hyperhelp_contents",
+                    },
+                    {
+                        "caption": "Help Index",
+                        "command": "hyperhelp_index",
+                    },
+
+                    { "caption": "-" },
+
+                    {
+                        "caption": "Clear topic history list",
+                        "command": "hyperhelp_history",
+                        "args": {
+                            "action": "clear"
+                        }
+                    },
+
+                    { "caption": "-" },
+
+                    {
+                        "caption": "Jump to item in history…",
+                        "command": "hyperhelp_history",
+                        "args": {
+                            "action": "jump"
+                        }
+                    },
+                    {
+                        "command": "hyperhelp_history",
+                        "args": {
+                            "action": "prev"
+                        }
+                    },
+                    {
+                        "command": "hyperhelp_history",
+                        "args": {
+                            "action": "next"
+                        }
+                    },
+
+                    { "caption": "-" },
+
+                    {
+                        "caption": "About HyperHelp",
+                        "command": "hyper_help_about",
+                    },
+                    {
+                        "caption": "View ChangeLog",
+                        "command": "hyperhelp_topic",
+                        "args": {
+                            "package": "HyperHelp",
+                            "topic": "changelog.txt"
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+]

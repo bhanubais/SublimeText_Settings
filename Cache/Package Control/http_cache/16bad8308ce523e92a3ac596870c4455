@@ -1,0 +1,52 @@
+{
+    "schema_version": "3.0.0",
+
+    "packages": [
+        {
+            "name": "HyperHelpAuthor",
+            "details": "https://github.com/STealthy-and-haSTy/HyperHelpAuthor",
+            "releases": [
+                {
+                    "sublime_text": ">=3092",
+                    "tags": true
+                }
+            ]
+        },
+        {
+            "name": "ProjectSpecificKeys",
+            "details": "https://github.com/OdatNurd/ProjectSpecificKeys",
+            "releases": [
+                {
+                    "sublime_text": ">=4050",
+                    "tags": true
+                }
+            ]
+        },        
+        {
+            "name": "SnAPI",
+            "details": "https://github.com/STealthy-and-haSTy/SnAPI",
+            "releases": [
+                {
+                    "sublime_text": ">=3092",
+                    "tags": true
+                }
+            ]
+        }
+    ],
+    "dependencies": [
+        {
+            "name": "hyperhelpcore",
+            "load_order": "05",
+            "description": "Help System for Sublime Text 3",
+            "author": "OdatNurd",
+            "issues": "https://github.com/STealthy-and-haSTy/hyperhelpcore/issues",
+            "releases": [
+                {
+                    "sublime_text": ">=3092",
+                    "base": "https://github.com/STealthy-and-haSTy/hyperhelpcore",
+                    "tags": true
+                }
+            ]
+        }
+    ]
+}

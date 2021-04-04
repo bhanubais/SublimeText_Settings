@@ -1,0 +1,110 @@
+[
+    // View the table of contents for the current help package.
+    {
+        "keys": ["?"], "command": "hyperhelp_contents",
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ]
+    },
+
+    // View the topic index for the current help package
+    {
+        "keys": ["i"], "command": "hyperhelp_index",
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ]
+    },
+
+    // Show the history of the help view in a quick panel and allow the user to
+    // jump to a specific entry directly.
+    {
+        "keys": ["h"], "command": "hyperhelp_history",
+        "args": {"action": "jump"},
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ]
+    },
+
+    // Prompt the user to bookmark the current file or topic.
+    {
+        "keys": ["b"], "command": "hyperhelp_prompt_create_bookmark",
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ]
+    },
+
+    // Prompt the user to select a bookmark, then navigate there.
+    {
+        "keys": ["g"], "command": "hyperhelp_open_bookmark",
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ]
+    },
+
+    // Navigate forward and backward through anchors in the current help file.
+    {
+        "keys": ["tab"], "command": "hyperhelp_navigate", "args": {
+            "nav": "find_anchor",
+            "prev": false,
+        },
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ],
+    },
+    {
+        "keys": ["shift+tab"], "command": "hyperhelp_navigate", "args": {
+            "nav": "find_anchor",
+            "prev": true,
+        },
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ],
+    },
+
+    // Follow links in the current help file.
+    {
+        "keys": ["enter"], "command": "hyperhelp_navigate", "args": {
+            "nav": "follow_link"
+        },
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "text.hyperhelp.help meta.link" },
+            { "key": "hyperhelp.is_authoring", "operator": "equal", "operand": false }
+        ]
+    },
+    {
+        "keys": ["keypad_enter"], "command": "hyperhelp_navigate", "args": {
+            "nav": "follow_link"
+        },
+        "context": [
+            { "key": "selector", "operator": "equal", "operand": "text.hyperhelp.help meta.link" },
+            { "key": "hyperhelp.is_authoring", "operator": "equal", "operand": false }
+        ]
+    },
+
+    // Navigate through the topic history
+    {
+        "keys": ["super+["], "command": "hyperhelp_history", "args": {
+            "action": "prev"
+        },
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ]
+    },
+    {
+        "keys": ["super+]"], "command": "hyperhelp_history", "args": {
+            "action": "next"
+        },
+        "context": [
+            { "key": "hyperhelp.is_help_view", "operator": "equal", "operand": true },
+        ]
+    },
+
+    // Open the command palette with all help commands displayed.
+    {
+        "keys": ["super+h"], "command": "show_overlay",
+        "args": {
+            "overlay": "command_palette",
+            "text" : "HyperHelp: "
+        }
+    }
+]

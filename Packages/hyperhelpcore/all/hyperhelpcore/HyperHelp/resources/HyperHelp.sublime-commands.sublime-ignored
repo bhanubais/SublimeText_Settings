@@ -1,0 +1,33 @@
+[
+    { "caption": "About HyperHelp",     "command": "hyper_help_about" },
+    { "caption": "HyperHelp ChangeLog", "command": "hyperhelp_topic", "args": { "package": "HyperHelp", "topic": "changelog.txt" } },
+
+    { "caption": "HyperHelp: Help on Help",           "command": "hyperhelp_topic",    "args": { "package": "HyperHelp", "topic": "help_on_help.txt" } },
+    { "caption": "HyperHelp: Browse Available Help",  "command": "hyperhelp_contents", "args": { "prompt": true } },
+    { "caption": "HyperHelp: Table of Contents",      "command": "hyperhelp_contents", "args": { "prompt": false } },
+    { "caption": "HyperHelp: Help Index",             "command": "hyperhelp_index",    "args": { "prompt": false } },
+
+    { "caption": "HyperHelp: Open Bookmarked help topic", "command": "hyperhelp_open_bookmark" },
+    { "caption": "HyperHelp: Create Bookmark", "command": "hyperhelp_prompt_create_bookmark" },
+
+    { "caption": "HyperHelp: Clear topic history list", "command": "hyperhelp_history", "args": {"action": "clear" } },
+    { "caption": "HyperHelp: Jump to topic in history list", "command": "hyperhelp_history", "args": {"action": "jump" } },
+
+    {
+        "caption": "Preferences: HyperHelp", "command": "edit_settings",
+        "args":
+        {
+            "base_file": "${packages}/HyperHelp/resources/HyperHelp.sublime-settings",
+            "default": "{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "Preferences: HyperHelp Key Bindings",
+        "command": "edit_settings",
+        "args":
+        {
+            "base_file": "${packages}/HyperHelp/resources/Default (${platform}).sublime-keymap",
+            "default": "[\n\t$0\n]\n"
+        }
+    },
+]

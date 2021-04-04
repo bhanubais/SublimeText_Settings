@@ -1,0 +1,482 @@
+{
+    "package": "HyperHelp",
+    "description": "HyperHelp System Documentation",
+    "doc_root": "help/",
+    "default_caption": "Topic {topic} in help source {source}",
+
+    "help_files": {
+        "index.txt": [
+            "HyperHelp: About HyperHelp",
+
+            {
+                "topic": "what is hyperhelp",
+                "caption": "HyperHelp: What is it?"
+            },
+            {
+                "topic": "how it works",
+                "caption": "HyperHelp: How it works"
+            },
+            {
+                "topic": "bootstrapping",
+                "caption": "HyperHelp: Bootstrapping"
+            },
+            {
+                "topic": "help files",
+                "caption": "HyperHelp: Help Files"
+            },
+            {
+                "topic": "example",
+                "caption": "Example Anchor"
+            }
+        ],
+
+        "help_on_help.txt": [
+            "How to use HyperHelp",
+
+            {
+                "topic": "introduction",
+                "caption": "Introduction to HyperHelp"
+            },
+            {
+                "topic": "navigating help",
+                "caption": "Navigating Help"
+            },
+            {
+                "topic": "help view",
+                "caption": "The Help view"
+            },
+            {
+                "topic": "opening help",
+                "caption": "Opening HyperHelp"
+            },
+            {
+                "topic": "history",
+                "caption": "Help History"
+            }
+        ],
+
+        "syntax.txt": [
+            "HyperHelp: Help Syntax",
+
+            {
+                "topic": "file header",
+                "caption": "Help Header Definition",
+                "aliases": ["header"]
+            },
+            {
+                "topic": "markup",
+                "caption": "Markup - Overview"
+            },
+            {
+                "topic": "key bindings",
+                "caption": "Markup - Key Bindings"
+            },
+            {
+                "topic": "code blocks",
+                "caption": "Markup - Code Blocks"
+            },
+            {
+                "topic": "anchors",
+                "caption": "Markup - Anchors",
+                "aliases": ["anchor"]
+            },
+            {
+                "topic": "headings",
+                "caption": "Markup - Headings",
+                "aliases": ["heading"]
+            },
+            {
+                "topic": "links",
+                "caption": "Markup - Links",
+                "aliases": ["link"]
+            },
+            {
+                "topic": "separators",
+                "caption": "Markup - Visual Separators"
+            },
+            {
+                "topic": "comments",
+                "caption": "Markup - Comments"
+            }
+        ],
+
+        "style.txt": [
+            "HyperHelp: Style Conventions",
+        ],
+
+        "authoring.txt": [
+            "HyperHelp: Authoring Help",
+
+            {
+                "topic": "authoring overview",
+                "caption": "Authoring Overview"
+            },
+            {
+                "topic": "help index loading",
+                "caption": "Help Index Loading"
+            },
+            {
+                "topic": "navigating topics",
+                "caption": "Navigating Topics"
+            }
+        ],
+
+        "help_index.txt": [
+            "Help Index Files",
+
+            {
+                "topic": "help_index.txt",
+                "caption": "hyperhelp.json",
+                "aliases": ["hyperhelp.json"]
+            },
+            {
+                "topic": "package description",
+                "caption": "Help Index: Package Description"
+            },
+            {
+                "topic": "package",
+                "caption": "hyperhelp.json: package key"
+            },
+            {
+                "topic": "description",
+                "caption": "hyperhelp.json: description key"
+            },
+            {
+                "topic": "doc_root",
+                "caption": "hyperhelp.json: doc_root key"
+            },
+            {
+                "topic": "default_caption",
+                "caption": "hyperhelp.json: default_caption key"
+            },
+            {
+                "topic": "help_files",
+                "caption": "hyperhelp.json: help_files key"
+            },
+            {
+                "topic": "help_contents",
+                "caption": "hyperhelp.json: help_contents key"
+            },
+            {
+                "topic": "children",
+                "caption": "help_contents: children key"
+            },
+            {
+                "topic": "external resources",
+                "caption": "hyperhelp.json: External Resources"
+            },
+            {
+                "topic": "externals",
+                "caption": "hyperhelp.json: externals key"
+            },
+            {
+                "topic": "help topics",
+                "caption": "hyperhelp.json: Help Topics"
+            },
+            {
+                "topic": "topic",
+                "caption": "Help Topics: topic key"
+            },
+            {
+                "topic": "caption",
+                "caption": "Help Topics: caption key"
+            },
+            {
+                "topic": "aliases",
+                "caption": "Help Topics: aliases key"
+            },
+            {
+                "topic": "table of contents",
+                "caption": "Table of Contents"
+            }
+        ],
+
+        "integration.txt": [
+            "Integrating HyperHelp",
+
+            {
+                "topic": "integration.txt",
+                "caption": "Integrating HyperHelp into your Package"
+            }
+        ],
+
+        "settings.txt": [
+            "HyperHelp Settings",
+
+            {
+                "topic": "package settings",
+                "caption": "HyperHelp Package Settings"
+            },
+            {
+                "topic": "dependency settings",
+                "caption": "HyperHelp Dependency Settings"
+            },
+            {
+                "topic": "hyperhelp_date_format",
+                "caption": "Setting: hyperhelp_date_format"
+            },
+            {
+                "topic": "show_changelog",
+                "caption": "Setting: show_changelog"
+            },
+            {
+                "topic": "focus_links_at_top",
+                "caption": "Setting: focus_links_at_top"
+            },
+            {
+                "topic": "hyperhelp.ignore_disabled",
+                "caption": "Setting: hyperhelp.ignore_disabled"
+            }
+        ],
+
+        "commands.txt": [
+            "HyperHelp Commands",
+
+            {
+                "topic": "command overview",
+                "caption": "Command Overview",
+                "aliases": ["commands"]
+            },
+            {
+                "topic": "hyperhelp_topic",
+                "caption": "Command: hyperhelp_topic"
+            },
+            {
+                "topic": "hyperhelp_contents",
+                "caption": "Command: hyperhelp_contents"
+            },
+            {
+                "topic": "hyperhelp_index",
+                "caption": "Command: hyperhelp_index"
+            },
+            {
+                "topic": "hyperhelp_navigate",
+                "caption": "Command: hyperhelp_navigate"
+            },
+            {
+                "topic": "hyperhelp_current_help",
+                "caption": "Command: hyperhelp_current_help"
+            },
+            {
+                "topic": "hyperhelp_history",
+                "caption": "Command: hyperhelp_history"
+            },
+            {
+                "topic": "hyperhelp_create_bookmark",
+                "caption": "Command: hyperhelp_create_bookmark"
+            },
+            {
+                "topic": "hyperhelp_prompt_create_bookmark",
+                "caption": "Command: hyperhelp_prompt_create_bookmark"
+            },
+            {
+                "topic": "hyperhelp_open_bookmark",
+                "caption": "Command: hyperhelp_open_bookmark"
+            }
+        ],
+
+        "key_contexts.txt": [
+            "HyperHelp Key Contexts",
+
+            {
+                "topic": "key_contexts.txt",
+                "caption": "HyperHelp Key Contexts",
+                "aliases": ["key contexts"]
+            },
+            {
+                "topic": "context overview",
+                "caption": "Context: context overview"
+            },
+            {
+                "topic": "hyperhelp.is_help_view",
+                "caption": "Context: hyperhelp.is_help_view"
+            },
+            {
+                "topic": "hyperhelp.is_help_visible",
+                "caption": "Context: hyperhelp.is_help_visible"
+            },
+            {
+                "topic": "hyperhelp.is_help",
+                "caption": "Context: hyperhelp.is_help"
+            },
+            {
+                "topic": "hyperhelp.is_help_source",
+                "caption": "Context: hyperhelp.is_help_source"
+            },
+            {
+                "topic": "hyperhelp.is_help_index",
+                "caption": "Context: hyperhelp.is_help_index"
+            },
+            {
+                "topic": "hyperhelp.is_help_package",
+                "caption": "Context: hyperhelp.is_help_package"
+            },
+            {
+                "topic": "hyperhelp.is_help_file",
+                "caption": "Context: hyperhelp.is_help_file"
+            }
+        ],
+
+        "api.txt": [
+            "HyperHelp API",
+
+            {
+                "topic": "api.txt",
+                "caption": "HyperHelp API",
+                "aliases": ["api"]
+            },
+            {
+                "topic": "api overview",
+                "caption": "API Overview"
+            }
+        ],
+
+        "bookmarks.txt": [
+            "HyperHelp Bookmarks",
+
+            {
+                "topic": "bookmarks",
+                "caption": "About Bookmarks",
+                "aliases": ["bookmark"]
+            },
+            {
+                "topic": "creating bookmarks",
+                "caption": "Bookmarks: Creation"
+            },
+            {
+                "topic": "file bookmark",
+                "caption": "Bookmarks: File Bookmark"
+            },
+            {
+                "topic": "view bookmark",
+                "caption": "Bookmarks: View Bookmark"
+            },
+            {
+                "topic": "topic bookmark",
+                "caption": "Bookmarks: Topic Bookmark"
+            }
+        ],
+
+        "example.txt": [
+            "Help Examples",
+
+            {
+                "topic": "example hyperhelp.json",
+                "caption": "Example hyperhelp.json Index File"
+            },
+            {
+                "topic": "example index.txt",
+                "caption": "Example index.txt Help File"
+            }
+        ],
+
+        "changelog.txt": [
+            "HyperHelp ChangeLog",
+
+            {
+                "topic": "latest_update",
+                "caption": "ChangeLog: Recent Changes"
+            },
+        ],
+    },
+
+    "externals": {
+        "https://github.com/STealthy-and-haSTy/HyperHelpAuthor": [
+            "HyperHelpAuthor: Help Authoring Package",
+
+            { "topic": "HyperHelpAuthor"}
+        ],
+
+        "https://github.com/STealthy-and-haSTy/SnAPI": [
+            "SnAPI: Sublime Text Documentation",
+
+            { "topic": "SnAPI" }
+        ],
+
+        "https://github.com/STealthy-and-haSTy/hyperhelpcore": [
+            "hyperhelpcore: The HyperHelp core Dependency",
+
+            { "topic": "hyperhelpcore" }
+        ],
+
+
+        "https://packagecontrol.io/docs/dependencies": [
+            "Package Control Dependency Documentation",
+
+            { "topic": "Package Control Dependency Documentation" }
+        ],
+
+        "https://odatnurd.net/overrideaudit/": [
+            "OverrideAudit Home Page",
+
+            { "topic": "OverrideAudit" }
+        ],
+
+        "https://packagecontrol.io/packages/PackageDev": [
+            "PackageDev: Sublime Text utility package",
+
+            { "topic": "PackageDev"}
+        ],
+
+        "https://json.org/": [
+            "Introducing JSON",
+
+            { "topic": "json" }
+        ],
+
+        "https://docs.python.org/3.3/": [
+            "Python 3.3.7 documentation",
+
+            { "topic": "python 3.3 docs" }
+        ],
+
+        "https://docs.python.org/3.3/library/datetime.html#strftime-and-strptime-behavior": [
+            "strftime() and strptime() Behavior",
+
+            { "topic": "strftime() and strptime() Behavior" }
+        ],
+
+        "Packages/Default/exec.py": [
+            "The default exec command",
+
+            { "topic": "exec.py" }
+        ],
+
+        "Packages/User/Preferences.sublime-settings": [
+            "User specific Sublime Settings",
+
+            {
+                "topic": "Preferences.sublime-settings",
+                "aliases": ["your user preferences"]
+            }
+        ]
+    },
+
+    "help_contents": [
+        {
+            "caption": "Change History",
+            "topic": "changelog.txt"
+        },
+        "help_on_help.txt",
+        "what is hyperhelp",
+        "settings.txt",
+        {
+            "topic": "syntax.txt",
+            "children": [
+                "syntax.txt",
+                "markup",
+                "anchors",
+                "headings",
+                "links",
+                "code blocks",
+                "key bindings",
+                "comments",
+                "separators"
+            ]
+        },
+        "commands.txt",
+        "style.txt",
+        "authoring.txt",
+        "integration.txt",
+    ]
+}

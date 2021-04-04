@@ -1,0 +1,81 @@
+%hyperhelp title="HyperHelp Settings" date="2020-04-06"
+
+
+# _none:Settings Overview
+===================
+
+Like most packages, HyperHelp allows you to customize its behaviour by
+providing various settings for you to configure as you see fit. However, unlike
+most packages, HyperHelp consists of both a dependency that powers the help
+system and a regular package that allows you to interact with it.
+
+For this reason, some settings are specific to the HyperHelp package and work
+like normal package settings, while others are specific to the dependency and
+go in the global |Preferences.sublime-settings| preferences file instead.
+
+
+## Package Settings
+-------------------
+
+The settings here go in the HyperHelp specific settings file, which you can get
+to by selecting `Preferences > Package Settings > HyperHelp > Settings` from
+the main menu.
+
+    *hyperhelp_date_format*
+
+        This setting controls the format of the last modification date that
+        appears in the |header| line of all help files. Changes to this setting
+        will be applied when the next help file is loaded.
+
+        The default value for this is setting is `%x`, which sets a date format
+        that's appropriate for the area of the world in which you live.
+
+        You can use any of the format specifiers given in the |Python 3.3 docs|
+        on the |strftime() and strptime() behavior| page.
+
+        Note however that no time stamps are stored for file times, only dates.
+        As such you should avoid any fields that tell you the time of the day.
+
+    *show_changelog*
+
+        When this setting is enabled (which is the default), when HyperHelp is
+        first installed it will display the |help_on_help.txt| file to help you
+        learn how to use it.
+
+        Similarly, whenever the package is upgraded the |:latest_update:latest entry| in the
+        |changelog.txt| file will be displayed to keep you informed on the most
+        recent changes and bug fixes.
+
+    *focus_links_at_top*
+
+        When this setting is enabled (which is the default), HyperHelp will
+        focus the anchor of the link at the top of the help view. When
+        disabled, the link achor will be centered in the help view instead.
+
+        This setting does not affect the focus of anchors during anchor
+        navigation through the file.
+
+
+## Dependency Settings
+----------------------
+
+The settings here are referenced by the dependency portion of HyperHelp and go
+in the |Preferences.sublime-settings| file because they need to be available
+even if the HyperHelp package is ignored or unavailable.
+
+If you use the |PackageDev| package, it will syntax highlight these settings
+differently, and will also provide auto-complete and hover popups for them as
+well.
+
+    *hyperhelp.ignore_disabled*
+
+        Normally, the hyperhelp core dependency performs a check at startup to
+        ensure that the HyperHelp package itself is not in the list of ignored
+        packages.
+
+        This is to ensure that problems caused by partial |:bootstrapping:bootstraps| don't go
+        unnoticed, which can cause confusing issues.
+
+        Should you actually want to have HyperHelp in the list of ignored
+        packages, this setting should be added to your user preferences to tell
+        the core that you intentionally ignored HyperHelp.

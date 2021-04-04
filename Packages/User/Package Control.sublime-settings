@@ -1,0 +1,29 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"Color Highlight",
+		"ColorPicker",
+		"Compare Side-By-Side",
+		"Emmet",
+		"HTML-CSS-JS Prettify",
+		"Origami",
+		"OverrideAudit",
+		"Package Control",
+		"PackageDev",
+		"PlainNotes",
+		"Sass",
+		"SideBarTools",
+		"SnAPI",
+		"Terminus",
+		"Text Pastry"
+	],
+	"repositories":
+	[
+		"https://raw.githubusercontent.com/STealthy-and-haSTy/SublimePackages/master/unreleased-packages.json"
+	]
+}
